@@ -7,10 +7,10 @@ let detener = document.getElementById("detener");
 
 let mensaje = document.getElementById("mensaje");
 
-function callApi(estatus){
+function callApi(status){
     // Hacer una petición para un usuario con ID especifico
 axios
-  .get('https://3.142.145.126/iot-car-control/back-end/apis/setRegistro.php?valorEstatus='+estatus)
+  .get('https://3.142.145.126/iot-car-control/back-end/apis/setRegistro.php?valorEstatus='+status)
   .then(function (response) {
     // manejar respuesta exitosa
     console.log(response);
